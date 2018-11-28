@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.renthouse.entity.User" table="user">
+        <id name="userId" column = "user_id" type="java.lang.Integer">
+            <generator class="native" />           <!-- 主键自增长 -->
+        </id>
+        <property name="userPwd" column = "user_pwd" type="java.lang.String">
+        </property>
+        <property name="userPhone" column = "user_phone" type="java.lang.String">
+        </property>
+        <property name="userName" column = "user_name" type="java.lang.String">
+        </property>
+        <!-- 
+        <set name="setHouse" cascade="save-update,delete">
+			<key column="fk_house_user"/>
+			<one-to-many class="com.renthouse.entity.House"/>
+		</set>
+		<set name="setCollect" cascade="save-update,delete">
+			<key column="fk_collect_user"/>
+			<one-to-many class="com.renthouse.entity.Collect"/>
+		</set>
+		<set name="setQuestion" cascade="save-update">
+			<key column="fk_question_user"/>
+			<one-to-many class="com.renthouse.entity.Question"/>
+		</set>
+		<set name="setReply" cascade="save-update">
+			<key column="fk_reply_user"/>
+			<one-to-many class="com.renthouse.entity.Reply"/>
+		</set>
+         -->
+        
+    </class>
+</hibernate-mapping>
