@@ -1,29 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE struts PUBLIC
-    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
-    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" 
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-
-
-<constant name="struts.multipart.saveDir" value="/tmp"/>
-<constant name="struts.enable.DynamicMethodInvocation" value="true" />
-<constant name="struts.i18n.encoding" value="utf-8" />  
-<!-- 上传的全部图片的最大限制-->  
-<constant name="struts.multipart.maxSize" value="1024102400" />  
-<!-- 临时存放文件的路径 -->  
-<constant name="struts.multipart.saveDir" value="d:/test" />  
-    
-<package name="struts2" extends="struts-default">
-	
-	
-	<!-- 
-	<action name = "test" class = "com.mylib.action.TestAction">
-		<result name = "hello">/index.jsp</result>
-		<result name = "regSucc">/register.jsp</result>
-	</action>
-	
-	 -->
-	
-</package>
+	<!-- 开发模式，在修改struts配置文件的时候不需要重启容器 -->
+	<constant name="struts.devMode" value="true" />
+	<package name="renthouse" extends="struts-default">	
+		<action name="send_*_*" class="UserAction">
+			<result name="send">/WEB-INF/{1}/{2}.jsp</result>
+		</action>	
+		<!-- 用来完成系统请求转发的action，所有的请求都交给execute 
+		
+		<action name="mail_*" class="mailAction" method="{1}">
+			<result name="success">/WEB-INF/pages/success.jsp</result>
+			<result name="error">/WEB-INF/pages/error.jsp</result>
+			<allowed-methods>send</allowed-methods>
+		</action>
+		-->
+	</package>
 </struts>
 
