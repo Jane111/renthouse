@@ -3,7 +3,7 @@ package com.renthouse.entity;
 public class Photo {        //照片实体类
 	
 	private Integer photoId;
-//	private Integer houseId;
+	private Integer houseId;
 	private String photoUrl;
 	
 	private House aHouse;
@@ -26,13 +26,13 @@ public class Photo {        //照片实体类
 		this.photoId = photoId;
 	}
 	
-//	public Integer getHouseId() {
-//		return houseId;
-//	}
-//	
-//	public void setHouseId(Integer houseId) {
-//		this.houseId = houseId;
-//	}
+	public Integer getHouseId() {
+		return houseId;
+	}
+	
+	public void setHouseId(Integer houseId) {
+		this.houseId = houseId;
+	}
 	
 	public String getPhotoUrl() {
 		return photoUrl;
@@ -47,17 +47,17 @@ public class Photo {        //照片实体类
 		
 	}
 	
-//	public Photo(Integer houseId,String photoUrl) {   //照片含参构造方法
-//		this.houseId = houseId;
-//		this.photoUrl = photoUrl;
-//	}
-//	
-//	public Photo(Integer photoId,Integer houseId,String photoUrl) {
-//		   //照片含参构造方法，含照片编号、房屋编号
-//		this.photoId = photoId;
-//		this.houseId = houseId;
-//		this.photoUrl = photoUrl;
-//	}
+	public Photo(Integer houseId,String photoUrl) {   //照片含参构造方法
+		this.houseId = houseId;
+		this.photoUrl = photoUrl;
+	}
+	
+	public Photo(Integer photoId,Integer houseId,String photoUrl) {
+		   //照片含参构造方法，含照片编号、房屋编号
+		this.photoId = photoId;
+		this.houseId = houseId;
+		this.photoUrl = photoUrl;
+	}
 
 }
 
