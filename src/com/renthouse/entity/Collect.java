@@ -5,28 +5,9 @@ import java.sql.Date;
 public class Collect {        //信息收集实体类
 	
 	private Integer collectId;
-//	private Integer userId;
-//	private Integer houseId;
+	private Integer userId;
+	private Integer houseId;
 	private Date collectTime;
-	
-	private User aUser;
-	private House aHouse;
-	
-	public User getaUser() {
-		return aUser;
-	}
-
-	public void setaUser(User aUser) {
-		this.aUser = aUser;
-	}
-
-	public House getaHouse() {
-		return aHouse;
-	}
-
-	public void setaHouse(House aHouse) {
-		this.aHouse = aHouse;
-	}
 
 	public Integer getCollectId() {
 		return collectId;
@@ -36,21 +17,21 @@ public class Collect {        //信息收集实体类
 		this.collectId = collectId;
 	}
 	
-//	public Integer getUserId() {
-//		return userId;
-//	}
-//	
-//	public void setUserId(Integer userId) {
-//		this.userId = userId;
-//	}
-//	
-//	public Integer getHouseId() {
-//		return houseId;
-//	}
-//	
-//	public void setHouseId(Integer houseId) {
-//		this.houseId = houseId;
-//	}
+	public Integer getUserId() {
+		return userId;
+	}
+	
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+	
+	public Integer getHouseId() {
+		return houseId;
+	}
+	
+	public void setHouseId(Integer houseId) {
+		this.houseId = houseId;
+	}
 	
 	public Date getCollectTime() {
 		return collectTime;
