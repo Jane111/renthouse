@@ -7,8 +7,8 @@ import java.util.Set;
 public class House {        //房屋信息实体类
 	
 	private Integer houseId;
-//	private Integer useId;
-//	private Integer comId;
+	private Integer useId;
+	private Integer comId;
 	private Integer houseBuilding;
 	private Integer houseUnit;
 	private Integer houseNum;
@@ -87,21 +87,21 @@ public class House {        //房屋信息实体类
 		this.houseId = houseId;
 	}
 	
-//	public Integer getUseId() {
-//		return useId;
-//	}
-//	
-//	public void setUseId(Integer useId) {
-//		this.useId = useId;
-//	}
-//	
-//	public Integer getComId() {
-//		return comId;
-//	}
-//	
-//	public void setComId(Integer comId) {
-//		this.comId = comId;
-//	}
+	public Integer getUseId() {
+		return useId;
+	}
+	
+	public void setUseId(Integer useId) {
+		this.useId = useId;
+	}
+	
+	public Integer getComId() {
+		return comId;
+	}
+	
+	public void setComId(Integer comId) {
+		this.comId = comId;
+	}
 //	
 	public Integer getHouseBuilding() {
 		return houseBuilding;
