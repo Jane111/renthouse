@@ -6,17 +6,17 @@ public class Photo {        //照片实体类
 	private Integer houseId;
 	private String photoUrl;
 	
-	private House aHouse;
+// 	private House aHouse;
 	
 	
 	
-	public House getaHouse() {
-		return aHouse;
-	}
+// 	public House getaHouse() {
+// 		return aHouse;
+// 	}
 
-	public void setaHouse(House aHouse) {
-		this.aHouse = aHouse;
-	}
+// 	public void setaHouse(House aHouse) {
+// 		this.aHouse = aHouse;
+// 	}
 
 	public Integer getPhotoId() {
 		return photoId;
